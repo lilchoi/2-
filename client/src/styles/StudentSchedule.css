@@ -1,0 +1,133 @@
+.student-schedule {
+  padding: 20px;
+}
+
+.week-navigation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.week-navigation button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.week-navigation button:hover {
+  background-color: #45a049;
+}
+
+.week-navigation span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.schedule-day {
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.schedule-day h3 {
+  margin: 0 0 15px 0;
+  color: #333;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 5px;
+}
+
+.lessons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lesson-item {
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.lesson-item.has-lesson {
+  background-color: #eaffea;
+}
+
+.lesson-item.no-lesson {
+  background-color: #fff;
+}
+
+.lesson-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.lesson-number {
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.lesson-time {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.lesson-half {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.break {
+  color: #999;
+  font-style: italic;
+  padding: 5px 0;
+}
+
+.lesson-subject {
+  font-weight: bold;
+  color: #2196F3;
+}
+
+.no-subject {
+  color: #999;
+  font-style: italic;
+}
+
+.no-lesson {
+  color: #999;
+  font-style: italic;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .schedule-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .week-navigation {
+    flex-direction: column;
+    gap: 10px;
+  }
+} 
